@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.MainActivity">
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawerlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <android.support.v7.widget.Toolbar
+                app:title="MusicHomeMp3"
+                app:titleTextColor="#FFFFFF"
+                android:id="@+id/toolbarmanhinhchinh"
+                android:background="#FFAB40"
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+
+            </android.support.v7.widget.Toolbar>
+            
+            <android.support.v4.view.ViewPager
+                android:background="#FFFFFF"
+                android:id="@+id/myViewPager"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+            </android.support.v4.view.ViewPager>
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/myTabLayout"
+                app:tabIndicatorColor="#FFAB40"
+                app:tabMode="fixed"
+                app:tabSelectedTextColor="#FFFFFF"
+                app:tabTextColor="#EDEBE8"
+                app:tabIndicatorHeight="2dp"
+                android:background="#FFA726"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </android.support.design.widget.TabLayout>
+
+
+        </LinearLayout>
+        <android.support.design.widget.NavigationView
+             android:id="@+id/navigationviewhome"
+             android:layout_gravity="start"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+<!--            <ListView-->
+<!--                android:id="@+id/listviewmanhinhhome"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"></ListView>-->
+       </android.support.design.widget.NavigationView>
+
+    </android.support.v4.widget.DrawerLayout>
+</LinearLayout>
+
